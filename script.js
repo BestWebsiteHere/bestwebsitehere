@@ -31,8 +31,7 @@ function start(){
 	out.innerHTML = "Player 1 Score: " + player1.score + "<br>Player 2 Score: " + player2.score;
 	requestAnimationFrame(start);
 }
-    }
-debugger;
+
 function Ball(x,y){
 	this.x = x;
 	this.y = y;
