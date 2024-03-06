@@ -31,22 +31,16 @@ function start(){
 	out.innerHTML = "Player 1 Score: " + player1.score + "<br>Player 2 Score: " + player2.score;
 	requestAnimationFrame(start);
 }
-out.innerHTML =     function goFullScreen(){
-
-        var elem = document.getElementById(temp);
-
-        if(elem.requestFullscreen){
-            elem.requestFullscreen();
-        }
-        else if(elem.mozRequestFullScreen){
-            elem.mozRequestFullScreen();
-        }
-        else if(elem.webkitRequestFullscreen){
-            elem.webkitRequestFullscreen();
-        }
-        else if(elem.msRequestFullscreen){
-            elem.msRequestFullscreen();
-        }
+out.innerHTML =     <section class="slider-wrapper" id="wrapper">
+  <button class="full-screen" title="Enter full screen mode">
+    <svg class="full-screen--open"></svg>
+    
+    <svg class="full-screen--close"></svg>
+  </button>
+  
+  <ul class="slides-container" id="slides-container">
+  </ul>
+</section>
     }
 function Ball(x,y){
 	this.x = x;
